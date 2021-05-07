@@ -17,7 +17,7 @@ public class Auteur {
     @Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int id;
+	private Long id;
 
     @Column(name="first_name")
 	private String firstName;
@@ -62,6 +62,10 @@ public class Auteur {
 
     public void setNationalite(String natio){
         this.nationalite = natio;
+    }
+
+    public void setId(Long id2){
+        this.id = id2;
     }
 
     @Override
