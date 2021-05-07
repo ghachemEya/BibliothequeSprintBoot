@@ -29,12 +29,12 @@ public class CategorieController {
     return repository.findAll();
     }
 
-	@PostMapping("/categories")
-    Categorie newauteur(@RequestBody Categorie newCategorie) {
+	  @PostMapping("/categories")
+    Categorie newcategorie(@RequestBody Categorie newCategorie) {
     return repository.save(newCategorie);
   	}
 
-    @GetMapping("/categories/{id}")
+     @GetMapping("/categories/{id}")
    
       Categorie one(@PathVariable Long  id) {
         
@@ -43,7 +43,7 @@ public class CategorieController {
       }
     
     @PutMapping("/categories/{id}")
-    Categorie replaceauteur(@RequestBody Categorie newCategorie, @PathVariable Long id) {
+    Categorie replaceCategorie(@RequestBody Categorie newCategorie, @PathVariable Long id) {
         
         return repository.findById(id)
           .map(categorie -> {

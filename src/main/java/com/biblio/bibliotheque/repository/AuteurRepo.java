@@ -15,6 +15,7 @@ public interface AuteurRepo extends JpaRepository<Auteur, Long> {
     // @Query("select r from Auteur r where r.nationalite like %:nationalite")
     // List<Auteur> findByNationaliteAuteur (@Param("nationalite") String nationalite);
 
+    
   
     // @Query("select r from Auteur r where r.last_name like %:lastName")
     // List<Auteur> findByLastNameAuteur (@Param("last_name") String lastName);

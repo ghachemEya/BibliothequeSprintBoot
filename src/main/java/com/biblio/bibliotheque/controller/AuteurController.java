@@ -67,13 +67,5 @@ public class AuteurController {
   	void deleteAuteur(@PathVariable Long id) {
     repository.deleteById(id);
   }
-  
 
-  
-	
-
-	
-
-
- 
 }
