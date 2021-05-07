@@ -1,10 +1,8 @@
 package com.biblio.bibliotheque;
 
-import com.biblio.bibliotheque.entity.Auteur;
-import com.biblio.bibliotheque.entity.Categorie;
-import com.biblio.bibliotheque.repository.AuteurRepo;
-import com.biblio.bibliotheque.repository.CategorieRepo;
 
+import com.biblio.bibliotheque.entity.Categorie;
+import com.biblio.bibliotheque.repository.CategorieRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
