@@ -16,7 +16,7 @@ public class Categorie {
     @Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int id;
+	private Long id;
 
 
     @Column(name = "libelle")
@@ -36,6 +36,10 @@ public class Categorie {
 
     public void setLibelle(String lib){
         this.libelle = lib;
+    }
+
+    public void setId(Long id){
+        this.id = id;
     }
 
     @Override

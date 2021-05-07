@@ -1,5 +1,9 @@
 package com.biblio.bibliotheque.repository;
+import com.biblio.bibliotheque.entity.Categorie;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface CategorieRepo {
+@Repository
+public interface CategorieRepo extends JpaRepository<Categorie, Long>  {
     
 }
