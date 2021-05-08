@@ -18,7 +18,7 @@ public class Livre {
     @Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private int id;
+	private Long id;
 
     @Column(name="titre")
     private String titre;
@@ -64,6 +64,9 @@ public class Livre {
         this.dateEdition = d;
     }
     
+    public void setId(Long id){
+        this.id = id;
+    }
 
     @Override
 	public String toString() {

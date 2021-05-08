@@ -1,6 +1,13 @@
 package com.biblio.bibliotheque.repository;
 
+import com.biblio.bibliotheque.entity.Student;
 
-public interface StudentRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface StudentRepo extends JpaRepository<Student, Long> {
+    
+
     
 }

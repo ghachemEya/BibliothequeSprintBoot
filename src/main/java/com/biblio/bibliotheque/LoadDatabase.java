@@ -1,9 +1,12 @@
 package com.biblio.bibliotheque;
 
 
-import java.util.Date;
+
 import com.biblio.bibliotheque.entity.Livre;
+import com.biblio.bibliotheque.entity.Student;
 import com.biblio.bibliotheque.repository.LivreRepo;
+import com.biblio.bibliotheque.repository.StudentRepo;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
@@ -15,10 +18,10 @@ import org.springframework.context.annotation.Bean;
 public class LoadDatabase {
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
     @Bean
-    CommandLineRunner initDatabase(LivreRepo repository) {
-      Date d = new Date(2021, 5, 7);
+    CommandLineRunner initDatabase(StudentRepo repository) {
+      
       return args -> {
-        log.info("Preloading " + repository.save(new Livre("Action", "fr", d)));
+        log.info("Preloading " + repository.save(new Student("Eya", "Ghachem", "Ghachemeya12@gmail.com")));
       };
     }
     

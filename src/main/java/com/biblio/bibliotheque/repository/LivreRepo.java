@@ -9,5 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface LivreRepo extends JpaRepository<Livre, Long>{
 
     
-    
+    // @Query("select l from livre l where l.langue like %:langue")
+    // List<Livre> findByLangueLivre (@Param("langue") String languee);
 }
